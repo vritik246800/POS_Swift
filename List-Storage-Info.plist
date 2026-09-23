@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_posapp._tcp</string>
+	</array>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>A aplicação usa a rede local para receber a lista de stock do computador que está por perto. A ligação é cifrada e só arranca depois de introduzir o código de emparelhamento e confirmar o dispositivo.</string>
+</dict>
+</plist>

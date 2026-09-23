@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "1E3A5C90-0000-4000-A000-000000000001",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Sales_Project.xcodeproj",
+      "identifier" : "9900481D2F4DEEFF000C1100",
+      "name" : "Sales_Project"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:Sales_Project.xcodeproj",
+        "identifier" : "AA1111110000000000000009",
+        "name" : "POSAppTests"
+      }
+    }
+  ],
+  "version" : 1
+}

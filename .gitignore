@@ -1,0 +1,41 @@
+# Base de dados e cópias — nunca vão para o repositório
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+
+# Ficheiros exportados (dados de clientes e vendas)
+POSApp_Relatorios/
+POSApp_LowStock/
+*.csv
+*.pdf
+*.posstock
+*.posstock.json
+
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.xcworkspace/xcuserdata/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# macOS
+.DS_Store
+
+# Xcode extras
+*.xcscmblueprint
+.swiftpm/
+*.perspectivev3
+*.mode1v3
+*.pbxuser
+
+# Claude local
+.claude/settings.local.json
+
+Docs/
+CLAUDE.md

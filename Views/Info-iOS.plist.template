@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Nome da App -->
+    <key>CFBundleDisplayName</key>
+    <string>POS Stock Receiver</string>
+    
+    <!-- Descrição para permissão de rede local (obrigatório iOS 14+) -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>A app precisa de acesso à rede local para receber dados de stock do Mac ou iPad.</string>
+    
+    <!-- Serviços Bonjour que a app anuncia -->
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_posapp._tcp</string>
+    </array>
+    
+    <!-- Background Modes (opcional, para recepção em background) -->
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>processing</string>
+        <string>fetch</string>
+    </array>
+    
+    <!-- Tipos de ficheiro importados (.posstock) -->
+    <key>UTImportedTypeDeclarations</key>
+    <array>
+        <dict>
+            <key>UTTypeConformsTo</key>
+            <array>
+                <string>public.data</string>
+                <string>public.content</string>
+            </array>
+            <key>UTTypeDescription</key>
+            <string>POS Stock Export</string>
+            <key>UTTypeIconFiles</key>
+            <array/>
+            <key>UTTypeIdentifier</key>
+            <string>com.posapp.stock-export</string>
+            <key>UTTypeTagSpecification</key>
+            <dict>
+                <key>public.filename-extension</key>
+                <array>
+                    <string>posstock</string>
+                    <string>posstock.json</string>
+                </array>
+                <key>public.mime-type</key>
+                <array>
+                    <string>application/x-posstock</string>
+                    <string>application/json</string>
+                </array>
+            </dict>
+        </dict>
+    </array>
+    
+    <!-- Suporte para Document Types (permite abrir .posstock directamente) -->
+    <key>CFBundleDocumentTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeName</key>
+            <string>POS Stock File</string>
+            <key>LSItemContentTypes</key>
+            <array>
+                <string>com.posapp.stock-export</string>
+            </array>
+            <key>LSHandlerRank</key>
+            <string>Owner</string>
+        </dict>
+    </array>
+    
+    <!-- Configurações de interface -->
+    <key>UILaunchScreen</key>
+    <dict>
+        <key>UIColorName</key>
+        <string>AccentColor</string>
+        <key>UIImageName</key>
+        <string>LaunchIcon</string>
+    </dict>
+    
+    <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+</dict>
+</plist>

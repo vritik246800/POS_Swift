@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Descrição para permissão de rede local (obrigatório iOS 14+) -->
+    <key>NSLocalNetworkUsageDescription</key>
+    <string>A app precisa de acesso à rede local para detectar e enviar dados de stock para dispositivos iOS.</string>
+    
+    <!-- Serviços Bonjour que a app procura/anuncia -->
+    <key>NSBonjourServices</key>
+    <array>
+        <string>_posapp._tcp</string>
+    </array>
+    
+    <!-- Declaração do tipo de ficheiro customizado .posstock -->
+    <key>UTExportedTypeDeclarations</key>
+    <array>
+        <dict>
+            <key>UTTypeConformsTo</key>
+            <array>
+                <string>public.data</string>
+                <string>public.content</string>
+            </array>
+            <key>UTTypeDescription</key>
+            <string>POS Stock Export</string>
+            <key>UTTypeIconFiles</key>
+            <array/>
+            <key>UTTypeIdentifier</key>
+            <string>com.posapp.stock-export</string>
+            <key>UTTypeTagSpecification</key>
+            <dict>
+                <key>public.filename-extension</key>
+                <array>
+                    <string>posstock</string>
+                    <string>posstock.json</string>
+                </array>
+                <key>public.mime-type</key>
+                <array>
+                    <string>application/x-posstock</string>
+                    <string>application/json</string>
+                </array>
+            </dict>
+        </dict>
+    </array>
+    
+    <!-- Configurações adicionais que já podem existir no teu Info.plist -->
+    <!-- ... -->
+</dict>
+</plist>
