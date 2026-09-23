@@ -30,6 +30,9 @@
     ],
     "_timeRate" : 0
   },
+  "subscriptionBundleGroups" : [
+
+  ],
   "subscriptionGroups" : [
     {
       "id" : "7EF330CE",
@@ -64,7 +67,7 @@
             "internalID" : "3169CB68",
             "numberOfPeriods" : 1,
             "paymentMode" : "free",
-            "subscriptionPeriod" : "P2W"
+            "subscriptionPeriod" : "P1W"
           },
           "introductoryOffers" : [
             {
@@ -73,7 +76,7 @@
               "internalID" : "3169CB68",
               "numberOfPeriods" : 1,
               "paymentMode" : "free",
-              "subscriptionPeriod" : "P2W"
+              "subscriptionPeriod" : "P1W"
             }
           ],
           "localizations" : [
@@ -95,8 +98,11 @@
       ]
     }
   ],
+  "subscriptionSuiteGroups" : [
+
+  ],
   "version" : {
-    "major" : 5,
-    "minor" : 0
+    "major" : 6,
+    "minor" : 3
   }
 }
